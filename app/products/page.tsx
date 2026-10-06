@@ -9,9 +9,9 @@ interface Product {
 }
 
 const fetchProducts = async () => {
-    // const res = await fetch("https://dummyjson.com/products"); // SSG
+    const res = await fetch("https://dummyjson.com/products"); // SSG
     // const res = await fetch("https://dummyjson.com/products", { cache: "no-store" }); // SSR
-    const res = await fetch("https://dummyjson.com/products", { next: { revalidate: 15 } }); // ISR
+    // const res = await fetch("https://dummyjson.com/products", { next: { revalidate: 10 } }); // ISR
 
     console.log("fetching");
 
